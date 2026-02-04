@@ -48,7 +48,6 @@ header{
     padding-bottom: 3%;
     text-shadow: blue;
     background-color: rgb(233, 50, 50);
-    
 
 }
 
@@ -104,7 +103,7 @@ nav ul li a:hover{
 .banner-content {
     width: 100%;
     height: calc(100vh - 100px);
-    background-image: url(group_img/index-page.jpg);
+    background-image: url(group_img/about-us.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,12 +115,13 @@ nav ul li a:hover{
 .banner-about{
     width: 100%;
     height: calc(100vh - 100px);
-    background-image: url(group_img/about-us.jpg);
+    background-image: url(group_img/About1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: table;
     height:max-content;
+
 }
 
 .events-banner{
@@ -149,7 +149,7 @@ nav ul li a:hover{
 .question-banner {
     width: 100%;
     height: calc(100vh - 100px);
-    background-image: url(group_img/q&s.png);
+    background-image: url(group_img/QuestionPage1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -228,3 +228,39 @@ footer div  {
     padding-bottom: 10px;
 }
 
+
+
+/*STYLING THE CALCULATOR*/
+.calculator {
+    width:300px;
+    height: 300px;
+    background-color: #fff;
+    border: 3px solid #111;
+    border-radius: 5px;
+
+}
+
+#value1, #value2 {
+    color: #111;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900px;
+    margin: 20px 5px;
+    padding-left: 10px;
+}
+
+#results {
+    background-color: #f3f3f3;
+    width:290px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+h6 {
+    font-size: 16px;
+
+}
+
+.note {
+    padding-top: 42px;
+}

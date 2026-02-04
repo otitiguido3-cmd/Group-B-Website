@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Qustions-and-Answers</title>
+        <title>Discussion Board</title>
         <link rel="shortcut icon" type="image/jpg" href="group_img/faivicon.jpg">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -18,7 +18,7 @@
                             <a href="about.html">About-the-Group</a>
                             <a href="calender_events.html">Calender/Events</a>
                             <a href="contact.html">Contact-Us</a>
-                            <a href="qn&answer.html">Qustions-and-Answers</a>
+                            <a href="qn&answer.html">Discussion Board</a>
                             <a href="resources.html">Resources</a>
                         </li>
                     </ul>
@@ -33,8 +33,40 @@
             </main>
             <section class="content">
                 <h2>Ask, Share, Discuss</h2>
-                <p>✅ This is the space to ask questions, share insights, and discuss topics related to our class. No question is too small—your curiosity drives growth!</p>
-                Share your idea on our Whatsapp platform 📳👉 <a href="https://chat.whatsapp.com/GhGrGMYXhgsEhAreIu3IlO">Here!!</a>
+                <p>✅ This is the space to ask questions, share insights, and discuss topics related to our class. No question is too small—your curiosity drives growth!<p>
+                Share your idea on our Whatsapp platform 👉 <a href="https://chat.whatsapp.com/GhGrGMYXhgsEhAreIu3IlO">Here!!</a>
+                <hr>
+                <h2>Quick Math tool.</h2>
+                <h3>Simple, Fast, Reliable calculations</h3>
+                <p>This tool helps you perform basic arithmetic operations in real time here now. <br><hr><big>You can test it out.📠</big></p>
+                <div class="calculator">
+                    <form>
+                        Value1: <input type="text" placeholder="Enter the first value!" id="value1">
+                        Value2: <input type="text"placeholder="Enter the Second value!" id="value2">
+                        Operations:
+                        <select id="operator">
+                            <option value="add">Add</option>
+                            <option value="minus">Subtract</option>
+                            <option value="mul">Multiply</option>
+                            <option value="div">Divide</option>
+                            <option value="sin">Sine</option>
+                            <option value="cos">Cosine</option>
+                            <option value="tan">Tangent (tan)</option>
+
+
+                        </select>
+                        <button type="button" onclick="calc()">Calculate</button>
+                    </form>
+                    <div id="results"><h6>Answer: <br> <p class="note"> Note that when calculating the trig functions, only first value (Value1) is considered, the second one is not applied.</p></h6> </div>
+                    <script>
+                        function dispalyMessage() {
+                            alert("Please refresh this page to clear the calculation you have done and do it again!!")
+                        }
+                    </script>
+                    <form>
+                        <input type="button" class="guide" Value="Click me for guidiance!"onclick="dispalyMessage()">
+                    </form>
+                </div>
             <footer>
                 <div class="footer-content"> 
                     <nav>
@@ -43,7 +75,7 @@
                                 <a href="about.html">About-the-Group</a>
                                 <a href="calender_events.html">Calender/Events</a>
                                 <a href="contact.html">Contact-Us</a>
-                                <a href="qn&answer.html">Qustions-and-Answers</a>
+                                <a href="qn&answer.html">Discussion Board</a>
                                 <a href="resources.html">Resources</a>
                                 <p class="comment">Gulu University, "For Community Transformation"</p>
                                 <p class="copyright">© Guido Otiti | All rights reserved.</p>
@@ -55,4 +87,5 @@
            
          </main>
     </body>
+    <script src="main.js"></script>
 </html>
