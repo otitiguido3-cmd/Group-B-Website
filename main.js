@@ -33,7 +33,7 @@ function calc() {
 let getHeader = document.querySelector(".greeting");
 
 //Creating a new element
-let newElement = document.createElement("h1");
+let newElement = document.createElement("h4");
 
 //Creating the new date object and the the current hour
 let date = new Date();
