@@ -42,15 +42,13 @@ let createTxtMsg ; // Empty variable for messages
 
 //Conditional statements
 if (currentHour >= 4 && currentHour < 12) {
-    createTxtMsg = "Good Morning, Champion!!"
+    createTxtMsg = "Hello, Good Morning Champion!!" 
 }else if (currentHour >= 12 && currentHour < 18) {
-    createTxtMsg = "Goood Afternoon!!"
+    createTxtMsg = "Hi, Goood Afternoon!! "
 }else if (currentHour >= 18 && currentHour < 21) {
-    createTxtMsg = "Goood Evening!!"
-}else if (currentHour >= 21 && currentHour < 4) {
-    createTxtMsg = "Goood Night !!"
+    createTxtMsg = "Hello, Goood Evening!!"
 }else{ 
-    createTxtMsg = "Are you from another planet if not then check on your time!!"
+    createTxtMsg = "Hello, Good night!!"
 }
 console.log(createTxtMsg);
 
