@@ -57,6 +57,17 @@ img {
     justify-content: center;
 }
 
+.toggle-menu {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.toggle-menu:focus-visible {
+    outline: none;
+}
+
 .toggle-menu img,
 .notification img,
 .profile-pict img {
@@ -67,6 +78,32 @@ img {
     border-radius: 14px;
     background: #fff;
     transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.notification {
+    position: relative;
+}
+
+.notification .header-badge {
+    position: absolute;
+    top: -4px;
+    right: -2px;
+    min-width: 22px;
+    height: 22px;
+    padding: 0 6px;
+    border-radius: 999px;
+    background: #d9534f;
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+}
+
+.profile-pict .header-badge {
+    display: none !important;
 }
 
 .toggle-menu:hover img,
@@ -327,6 +364,15 @@ img {
     transition: transform 0.3s ease;
     z-index: 1300;
     overflow-y: auto;
+}
+
+.side-menu-panel.open {
+    transform: translateX(0);
+}
+
+#page-side-menu.open,
+#side-menu-panel.open {
+    transform: translateX(0);
 }
 
 .side-item-menu.open .side-menu-panel {
@@ -685,6 +731,25 @@ footer nav ul li a {
     font-size: 0.78rem;
     line-height: 1.2;
     white-space: normal;
+    position: relative;
+}
+
+.footer-badge {
+    position: absolute;
+    top: -4px;
+    right: 6px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 999px;
+    background: #d9534f;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
 }
 
 footer nav ul li a img {

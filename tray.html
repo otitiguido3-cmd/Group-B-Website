@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tray</title>
+    <link rel="stylesheet" href="tray.css">
+
+
+
+</head>
+
+<body>
+    <header class="main-header">
+        <button class="toggle-menu" type="button" aria-label="Open menu" aria-expanded="false">
+            <img src="images/menu.png" alt="Toggle-menu">
+        </button>
+        <div class="smart-food">
+            <h3>MY TRAY</h3>
+        </div>
+        <div class="notification" aria-label="Notifications">
+            <img src="images/notification.png" alt="Notification">
+        </div>
+        <div class="profile-pict">
+            <a href="profile.html"><img src="images/profile.png" alt="Profile Image"></a>
+        </div>
+
+    </header>
+
+    <!-- Shared slide-out navigation panel for the app pages -->
+    <aside class="side-menu-panel" id="page-side-menu" role="navigation" aria-label="Main navigation">
+        <div class="side-menu-header">
+            <h3>Menu</h3>
+            <button class="side-menu-close" type="button" aria-label="Close menu">&times;</button>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="tray.html">Tray</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </aside>
+    <div class="side-menu-backdrop" id="page-side-backdrop"></div>
+    
+    <!-- STRUCTURING THE  MAIN CONTENT -->
+    <section class="free-delivery">
+        <div class="free-delivery-content">
+            <div class="deliver-now">
+                <img src="images/illustration2.png" alt="Free Delivery">
+                <h4>Free Delivery</h4><br>
+            </div>
+            
+            <p>Get free delivery on orders above UGX: 50,000</p>
+
+        </div>
+    </section>
+
+    <div class="tray-page-content tray-disabled">
+        <div class="tray-items-list"></div>
+
+        <div class="tray-actions">
+            <div class="promo-box">
+                <div class="promo-img"><img src="images/promo.png" alt="Promo image"></div>
+                <div class="promo-img">
+                    <h4>Have a promo code?</h4>
+                    <p>Enter code to get discount.</p>
+                </div>
+                <div class="promo-img">
+                    <button class="apply-promo-code">Apply</button>
+                </div>
+            </div>
+
+            <section class="calculation">
+                <div class="calculation-content">
+                    <div class="sub-total">Subtotal:</div>
+                    <div class="fee" name="fee">Ugx: 0</div>
+                </div>
+                <div class="calculation-content">
+                    <div class="sub-total">Delivery Fee:</div>
+                    <div class="fee" name="fee">Ugx: 0</div>
+                </div>
+                <div class="calculation-content">
+                    <div class="sub-total">Service Fee:</div>
+                    <div class="fee" name="fee">Ugx: 0</div>
+                </div>
+                <hr>
+                <br>
+                <div class="calculation-content">
+                    <div class="sub-total">Total:</div>
+                    <div class="fee" name="fee">Ugx: 0</div>
+                </div>
+            </section>
+
+            <section class="proceed-to-checkout">
+                <a href="orders.html" class="checkout">Proceed to Checkout </a>
+                <a href="#" ><img class="checkout-img" src="images/forward.png" alt="Forward"> </a>
+            </section>
+        </div>
+    </div>
+    
+    
+     <!-- STRUCTURING THE FOOTER -->
+   
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="images/home.png" alt="Home"> <br> Home</a></li>
+                <li><a href="menu.html"><img src="images/menu.png" alt="Menu"> <br> Menu</a></li>
+                <li><a href="tray.html"><img src="images/tray.png" alt="Tray"> <br> Tray</a></li>
+                <li><a href="orders.html"><img src="images/orders.png" alt="Orders"> <br> Orders</a></li>
+                <li><a href="profile.html"><img src="images/profile.png" alt="Profile"> <br> Profile</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <div class="side-menu-backdrop" id="side-menu-backdrop"></div>
+    <div id="tray-toast" class="tray-toast" role="status" aria-live="polite"></div>
+    <script src="main.js"></script>
+</body>
+</html>
